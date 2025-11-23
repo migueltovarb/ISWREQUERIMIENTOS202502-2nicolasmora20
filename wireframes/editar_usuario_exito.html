@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Edición Exitosa · Administración</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wf-app">
+      <div class="wf-browser">
+        <div class="wf-browser__bar">
+          <div class="wf-browser__controls">
+            <a class="wf-icon-btn" href="editar_usuario.html" aria-label="Atrás">⟵</a>
+            <button class="wf-icon-btn" aria-label="Adelante">⟶</button>
+            <button class="wf-icon-btn" aria-label="Recargar">⟳</button>
+          </div>
+          <div class="wf-browser__url">https://wireframe.local/admin/usuarios/editar/exito</div>
+          <div class="wf-browser__actions">
+            <span class="wf-dot"></span>
+            <span class="wf-dot"></span>
+            <span class="wf-dot"></span>
+          </div>
+        </div>
+
+        <main class="wf-browser__content">
+          <h1 class="wf-section-title">Cambios guardados</h1>
+
+          <div class="wf-banner" role="status" aria-live="polite">
+            La edición fue exitosa. Los permisos se actualizaron inmediatamente según el nuevo rol.
+          </div>
+
+          <section class="wf-grid wf-grid--2">
+            <div class="wf-card">
+              <div class="wf-card__title">Resumen de edición</div>
+              <div class="wf-stack">
+                <div class="wf-paragraph"><strong>Nombre:</strong> Nombre Apellido</div>
+                <div class="wf-paragraph"><strong>Documento:</strong> 1234567890</div>
+                <div class="wf-paragraph"><strong>Correo:</strong> usuario@dominio.com</div>
+                <div class="wf-paragraph"><strong>Teléfono:</strong> 3001234567</div>
+                <div class="wf-paragraph"><strong>Rol:</strong> Coordinador</div>
+                <div class="wf-paragraph"><strong>Ciudad:</strong> Bogotá</div>
+                <div class="wf-paragraph"><strong>Estado:</strong> Activo</div>
+              </div>
+            </div>
+            <div class="wf-card">
+              <div class="wf-card__title">Historial</div>
+              <div class="wf-paragraph">Se registró un nuevo cambio en el historial.</div>
+              <div class="wf-center"><a class="wf-chip" href="usuario_historial.html">Ver historial</a></div>
+            </div>
+          </section>
+
+          <div class="wf-toolbar">
+            <a class="wf-button wf-button--secondary" href="home_admin.html">Volver al panel</a>
+            <a class="wf-button" href="editar_usuario.html">Editar otro usuario</a>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+  </html>
+

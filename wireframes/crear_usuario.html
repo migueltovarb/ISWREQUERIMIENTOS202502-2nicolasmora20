@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Crear Usuario · Administración</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wf-app">
+      <div class="wf-browser">
+        <div class="wf-browser__bar">
+          <div class="wf-browser__controls">
+            <a class="wf-icon-btn" href="home_admin.html" aria-label="Atrás">⟵</a>
+            <button class="wf-icon-btn" aria-label="Adelante">⟶</button>
+            <button class="wf-icon-btn" aria-label="Recargar">⟳</button>
+          </div>
+          <div class="wf-browser__url">https://wireframe.local/admin/usuarios/nuevo</div>
+          <div class="wf-browser__actions">
+            <span class="wf-dot"></span>
+            <span class="wf-dot"></span>
+            <span class="wf-dot"></span>
+          </div>
+        </div>
+
+        <main class="wf-browser__content">
+          <h1 class="wf-section-title">Crear nuevo usuario</h1>
+
+          <!-- Banner de error (simulación de duplicados) -->
+          <!-- Usa wf-banner--error cuando el sistema detecte duplicados -->
+          <div class="wf-banner wf-banner--compact" role="status" aria-live="polite">
+            Los duplicados se validan al enviar. Se enviarán credenciales temporales por correo.
+          </div>
+
+          <form class="wf-form" action="crear_usuario_exito.html" method="get">
+            <div class="wf-form-grid">
+              <!-- Nombre completo -->
+              <div class="wf-field">
+                <label class="wf-label wf-required" for="cu-fullname">Nombre completo</label>
+                <input id="cu-fullname" class="wf-input" type="text" required autocomplete="name" placeholder="Nombre y apellido" aria-describedby="err-cu-fullname" />
+                <div id="err-cu-fullname" class="wf-error">Este campo es obligatorio.</div>
+              </div>
+
+              <!-- Documento -->
+              <div class="wf-field">
+                <label class="wf-label wf-required" for="cu-doc">Documento</label>
+                <input id="cu-doc" class="wf-input" type="text" inputmode="numeric" required placeholder="Solo números" aria-describedby="err-cu-doc" />
+                <div class="wf-hint">Se verifica que no esté registrado previamente.</div>
+                <div id="err-cu-doc" class="wf-error">Documento inválido o ya registrado.</div>
+              </div>
+
+              <!-- Correo -->
+              <div class="wf-field">
+                <label class="wf-label wf-required" for="cu-email">Correo</label>
+                <input id="cu-email" class="wf-input" type="email" required autocomplete="email" placeholder="usuario@dominio.com" aria-describedby="err-cu-email" />
+                <div class="wf-hint">Se valida formato y duplicidad.</div>
+                <div id="err-cu-email" class="wf-error">Correo inválido o ya registrado.</div>
+              </div>
+
+              <!-- Teléfono -->
+              <div class="wf-field">
+                <label class="wf-label wf-required" for="cu-phone">Teléfono</label>
+                <input id="cu-phone" class="wf-input" type="tel" inputmode="numeric" pattern="[0-9]{10}" minlength="10" maxlength="10" required placeholder="10 dígitos" aria-describedby="err-cu-phone" />
+                <div id="err-cu-phone" class="wf-error">Solo números y 10 dígitos.</div>
+              </div>
+
+              <!-- Rol -->
+              <div class="wf-field">
+                <label class="wf-label wf-required" for="cu-role">Rol</label>
+                <select id="cu-role" class="wf-select" required aria-describedby="err-cu-role">
+                  <option value="" selected disabled>Selecciona rol</option>
+                  <option>Administrador</option>
+                  <option>Coordinador</option>
+                  <option>Voluntario</option>
+                </select>
+                <div id="err-cu-role" class="wf-error">Selecciona un rol.</div>
+              </div>
+
+              <!-- Ciudad -->
+              <div class="wf-field">
+                <label class="wf-label wf-required" for="cu-city">Ciudad</label>
+                <select id="cu-city" class="wf-select" required autocomplete="address-level2" aria-describedby="err-cu-city">
+                  <option value="" selected disabled>Selecciona ciudad</option>
+                  <option>Bogotá</option>
+                  <option>Medellín</option>
+                  <option>Cali</option>
+                  <option>Barranquilla</option>
+                  <option>Bucaramanga</option>
+                  <option>Cartagena</option>
+                  <option>Otra</option>
+                </select>
+                <div id="err-cu-city" class="wf-error">Selecciona una ciudad.</div>
+              </div>
+            </div>
+
+            <div class="wf-toolbar">
+              <a class="wf-button wf-button--secondary" href="home_admin.html">Cancelar</a>
+              <button class="wf-button" type="submit">Crear usuario</button>
+            </div>
+          </form>
+        </main>
+      </div>
+    </div>
+  </body>
+  </html>
+

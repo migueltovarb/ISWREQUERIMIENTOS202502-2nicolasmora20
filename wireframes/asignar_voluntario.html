@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Asignar Voluntario · Coordinador</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="wf-app">
+        <div class="wf-browser">
+            <div class="wf-browser__bar">
+                <div class="wf-browser__controls">
+                    <a class="wf-icon-btn" href="editar_actividad.html" aria-label="Atrás">←</a>
+                    <button class="wf-icon-btn" aria-label="Adelante">→</button>
+                    <button class="wf-icon-btn" aria-label="Recargar">↻</button>
+                </div>
+                <div class="wf-browser__url">https://wireframe.local/actividades/asignar/123</div>
+                <div class="wf-browser__actions">
+                    <span class="wf-dot"></span>
+                    <span class="wf-dot"></span>
+                    <span class="wf-dot"></span>
+                </div>
+            </div>
+
+            <main class="wf-browser__content">
+                <h1 class="wf-section-title">Asignación Manual - Limpieza de Playa</h1>
+
+                <div class="wf-auth-columns wf-auth-columns--single">
+                    <div class="wf-form-panel" style="max-width: 600px;">
+                        <div class="wf-card">
+                            <form class="wf-form">
+                                <div class="wf-stack">
+                                    <div class="wf-paragraph">
+                                        Utilice este formulario para inscribir manualmente a un voluntario en la
+                                        actividad.
+                                        <br><strong>Nota:</strong> Esta acción puede exceder el límite de cupos si es
+                                        necesario.
+                                    </div>
+
+                                    <div class="wf-field">
+                                        <label class="wf-label wf-required">Buscar Voluntario (Email o Nombre)</label>
+                                        <div style="display: flex; gap: 8px;">
+                                            <input type="text" class="wf-input" placeholder="ejemplo@correo.com"
+                                                required />
+                                            <button type="button" class="wf-button wf-button--secondary">Buscar</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Resultado de búsqueda simulado -->
+                                    <div class="wf-banner" style="margin-top: 16px;">
+                                        <div style="font-weight: 600;">Usuario encontrado:</div>
+                                        <div>Juan Pérez (juan.perez@email.com)</div>
+                                        <div class="wf-hint">Estado: Activo</div>
+                                    </div>
+
+                                    <div class="wf-field">
+                                        <label class="wf-label">Observaciones (Opcional)</label>
+                                        <textarea class="wf-input" style="height: 80px; padding-top: 8px;"
+                                            placeholder="Motivo de la asignación manual..."></textarea>
+                                    </div>
+
+                                    <div class="wf-field">
+                                        <label class="wf-option">
+                                            <input type="checkbox" />
+                                            <span>Notificar al voluntario por correo electrónico</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="wf-actions">
+                                        <a href="home_coordinador.html" class="wf-button wf-button--secondary"
+                                            style="margin-right: 8px;">Cancelar</a>
+                                        <button type="submit" class="wf-button">Confirmar Asignación</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

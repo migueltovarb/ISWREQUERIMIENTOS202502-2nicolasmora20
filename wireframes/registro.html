@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registro de Voluntarios · Wireframe</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wf-app">
+      <div class="wf-browser">
+        <div class="wf-browser__bar">
+          <div class="wf-browser__controls">
+            <a class="wf-icon-btn" href="index.html" aria-label="Atrás">⟵</a>
+            <button class="wf-icon-btn" aria-label="Adelante">⟶</button>
+            <button class="wf-icon-btn" aria-label="Recargar">⟳</button>
+          </div>
+          <div class="wf-browser__url">https://wireframe.local/registro</div>
+          <div class="wf-browser__actions">
+            <span class="wf-dot"></span>
+            <span class="wf-dot"></span>
+            <span class="wf-dot"></span>
+          </div>
+        </div>
+
+        <main class="wf-browser__content">
+          <h1 class="wf-section-title">Registro de Voluntarios</h1>
+
+          <form class="wf-form" action="login.html" method="get" novalidate>
+            <input type="hidden" name="registered" value="true" />
+
+            <div class="wf-form-grid">
+              <!-- Nombre completo -->
+              <div class="wf-field">
+                <label class="wf-label wf-required" for="fullname">Nombre completo</label>
+                <input id="fullname" class="wf-input" type="text" required placeholder="Tu nombre" />
+                <div class="wf-error">Este campo es obligatorio.</div>
+              </div>
+
+              <!-- Documento de identidad -->
+              <div class="wf-field">
+                <label class="wf-label wf-required" for="docid">Documento de identidad</label>
+                <input id="docid" class="wf-input" type="text" inputmode="numeric" placeholder="Solo números" required />
+                <div class="wf-hint">El sistema verifica que no esté registrado.</div>
+                <div class="wf-error">Documento ya registrado.</div>
+              </div>
+
+              <!-- Correo electrónico -->
+              <div class="wf-field">
+                <label class="wf-label wf-required" for="email">Correo electrónico</label>
+                <input id="email" class="wf-input" type="email" required placeholder="usuario@dominio.com" />
+                <div class="wf-error">Formato de correo inválido.</div>
+              </div>
+
+              <!-- Teléfono -->
+              <div class="wf-field">
+                <label class="wf-label wf-required" for="phone">Teléfono</label>
+                <input id="phone" class="wf-input" type="tel" inputmode="numeric" pattern="[0-9]{10}" minlength="10" maxlength="10" required placeholder="10 dígitos" />
+                <div class="wf-error">Debe contener solo números y 10 dígitos.</div>
+              </div>
+
+              <!-- Ciudad -->
+              <div class="wf-field">
+                <label class="wf-label wf-required" for="city">Ciudad</label>
+                <select id="city" class="wf-select" required>
+                  <option value="" selected disabled>Selecciona ciudad</option>
+                  <option>Bogotá</option>
+                  <option>Medellín</option>
+                  <option>Cali</option>
+                  <option>Barranquilla</option>
+                  <option>Bucaramanga</option>
+                  <option>Cartagena</option>
+                  <option>Otra</option>
+                </select>
+                <div class="wf-error">Selecciona una ciudad.</div>
+              </div>
+
+              <!-- Habilidades -->
+              <div class="wf-field wf-field--full">
+                <label class="wf-label" for="skills">Habilidades (opcional)</label>
+                <div class="wf-options" id="skills">
+                  <label class="wf-option"><input type="checkbox" /> Logística</label>
+                  <label class="wf-option"><input type="checkbox" /> Comunicación</label>
+                  <label class="wf-option"><input type="checkbox" /> Docencia</label>
+                  <label class="wf-option"><input type="checkbox" /> Salud</label>
+                  <label class="wf-option"><input type="checkbox" /> Tecnología</label>
+                  <label class="wf-option"><input type="checkbox" /> Administrativas</label>
+                </div>
+              </div>
+
+              <!-- Intereses -->
+              <div class="wf-field wf-field--full">
+                <label class="wf-label" for="interests">Intereses (opcional)</label>
+                <div class="wf-options" id="interests">
+                  <label class="wf-option"><input type="checkbox" /> Niñez</label>
+                  <label class="wf-option"><input type="checkbox" /> Adulto mayor</label>
+                  <label class="wf-option"><input type="checkbox" /> Medio ambiente</label>
+                  <label class="wf-option"><input type="checkbox" /> Animales</label>
+                  <label class="wf-option"><input type="checkbox" /> Emergencias</label>
+                </div>
+              </div>
+
+              <!-- Disponibilidad -->
+              <div class="wf-field wf-field--full">
+                <label class="wf-label" for="availability">Disponibilidad (opcional)</label>
+                <div class="wf-options" id="availability">
+                  <label class="wf-option"><input type="checkbox" /> Mañana</label>
+                  <label class="wf-option"><input type="checkbox" /> Tarde</label>
+                  <label class="wf-option"><input type="checkbox" /> Noche</label>
+                  <label class="wf-option"><input type="checkbox" /> Fin de semana</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="wf-actions">
+              <button class="wf-button" type="submit">Registrar</button>
+            </div>
+          </form>
+
+          <footer class="wf-footer-nav">
+            <a class="wf-link" href="login.html">Ir a inicio de sesión</a>
+            <a class="wf-link" href="index.html">Home</a>
+          </footer>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

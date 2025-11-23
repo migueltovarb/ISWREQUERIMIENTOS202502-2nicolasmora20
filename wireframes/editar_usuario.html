@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Editar Usuario · Administración</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wf-app">
+      <div class="wf-browser">
+        <div class="wf-browser__bar">
+          <div class="wf-browser__controls">
+            <a class="wf-icon-btn" href="home_admin.html" aria-label="Atrás">⟵</a>
+            <button class="wf-icon-btn" aria-label="Adelante">⟶</button>
+            <button class="wf-icon-btn" aria-label="Recargar">⟳</button>
+          </div>
+          <div class="wf-browser__url">https://wireframe.local/admin/usuarios/editar</div>
+          <div class="wf-browser__actions">
+            <span class="wf-dot"></span>
+            <span class="wf-dot"></span>
+            <span class="wf-dot"></span>
+          </div>
+        </div>
+
+        <main class="wf-browser__content">
+          <h1 class="wf-section-title">Editar usuario</h1>
+
+          <div class="wf-banner wf-banner--compact" role="status" aria-live="polite">
+            Solo administradores pueden editar usuarios. Los cambios actualizan permisos inmediatamente.
+          </div>
+
+          <section class="wf-grid wf-grid--2">
+            <!-- Formulario de edición -->
+            <div>
+              <form class="wf-form" action="editar_usuario_exito.html" method="get" novalidate>
+                <div class="wf-form-grid">
+                  <!-- Nombre completo -->
+                  <div class="wf-field">
+                    <label class="wf-label wf-required" for="eu-fullname">Nombre completo</label>
+                    <input id="eu-fullname" class="wf-input" type="text" required autocomplete="name" placeholder="Nombre y apellido" aria-describedby="err-eu-fullname" />
+                    <div id="err-eu-fullname" class="wf-error">Este campo es obligatorio.</div>
+                  </div>
+
+                  <!-- Documento -->
+                  <div class="wf-field">
+                    <label class="wf-label wf-required" for="eu-doc">Documento</label>
+                    <input id="eu-doc" class="wf-input" type="text" inputmode="numeric" required placeholder="Solo números" aria-describedby="err-eu-doc" />
+                    <div class="wf-hint">Se valida que no esté duplicado.</div>
+                    <div id="err-eu-doc" class="wf-error">Documento inválido o ya registrado.</div>
+                  </div>
+
+                  <!-- Correo -->
+                  <div class="wf-field">
+                    <label class="wf-label wf-required" for="eu-email">Correo</label>
+                    <input id="eu-email" class="wf-input" type="email" required autocomplete="email" placeholder="usuario@dominio.com" aria-describedby="err-eu-email" />
+                    <div id="err-eu-email" class="wf-error">Correo inválido o ya registrado.</div>
+                  </div>
+
+                  <!-- Teléfono -->
+                  <div class="wf-field">
+                    <label class="wf-label wf-required" for="eu-phone">Teléfono</label>
+                    <input id="eu-phone" class="wf-input" type="tel" inputmode="numeric" pattern="[0-9]{10}" minlength="10" maxlength="10" required placeholder="10 dígitos" aria-describedby="err-eu-phone" />
+                    <div id="err-eu-phone" class="wf-error">Solo números y 10 dígitos.</div>
+                  </div>
+
+                  <!-- Rol -->
+                  <div class="wf-field">
+                    <label class="wf-label wf-required" for="eu-role">Rol</label>
+                    <select id="eu-role" class="wf-select" required aria-describedby="err-eu-role">
+                      <option value="" selected disabled>Selecciona rol</option>
+                      <option>Administrador</option>
+                      <option>Coordinador</option>
+                      <option>Voluntario</option>
+                    </select>
+                    <div id="err-eu-role" class="wf-error">Selecciona un rol.</div>
+                  </div>
+
+                  <!-- Ciudad -->
+                  <div class="wf-field">
+                    <label class="wf-label wf-required" for="eu-city">Ciudad</label>
+                    <select id="eu-city" class="wf-select" required autocomplete="address-level2" aria-describedby="err-eu-city">
+                      <option value="" selected disabled>Selecciona ciudad</option>
+                      <option>Bogotá</option>
+                      <option>Medellín</option>
+                      <option>Cali</option>
+                      <option>Barranquilla</option>
+                      <option>Bucaramanga</option>
+                      <option>Cartagena</option>
+                      <option>Otra</option>
+                    </select>
+                    <div id="err-eu-city" class="wf-error">Selecciona una ciudad.</div>
+                  </div>
+
+                  <!-- Estado -->
+                  <div class="wf-field">
+                    <label class="wf-label wf-required" for="eu-status">Estado</label>
+                    <select id="eu-status" class="wf-select" required aria-describedby="err-eu-status">
+                      <option value="" selected disabled>Selecciona estado</option>
+                      <option>Activo</option>
+                      <option>Inactivo</option>
+                      <option>Suspendido</option>
+                    </select>
+                    <div id="err-eu-status" class="wf-error">Selecciona un estado.</div>
+                  </div>
+                </div>
+
+                <div class="wf-toolbar">
+                  <a class="wf-button wf-button--secondary" href="home_admin.html">Cancelar</a>
+                  <button class="wf-button" type="submit">Guardar cambios</button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Historial de cambios -->
+            <div>
+              <div class="wf-card">
+                <div class="wf-card__title">Historial de cambios</div>
+                <div class="wf-stack">
+                  <div class="wf-paragraph">2025-11-01 · Rol: Voluntario → Coordinador</div>
+                  <div class="wf-paragraph">2025-10-22 · Teléfono actualizado</div>
+                  <div class="wf-paragraph">2025-09-15 · Ciudad: Cali → Bogotá</div>
+                </div>
+                <div class="wf-center">
+                  <a class="wf-chip" href="usuario_historial.html">Ver historial completo</a>
+                </div>
+              </div>
+              <div class="wf-banner wf-banner--error wf-banner--compact" aria-live="polite">
+                Para el administrador principal, la edición está bloqueada.
+                <a class="wf-link" href="editar_usuario_bloqueado.html">Ver ejemplo</a>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+  </html>
+

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Editar Actividad · Coordinador</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="wf-app">
+        <div class="wf-browser">
+            <div class="wf-browser__bar">
+                <div class="wf-browser__controls">
+                    <a class="wf-icon-btn" href="home_coordinador.html" aria-label="Atrás">←</a>
+                    <button class="wf-icon-btn" aria-label="Adelante">→</button>
+                    <button class="wf-icon-btn" aria-label="Recargar">↻</button>
+                </div>
+                <div class="wf-browser__url">https://wireframe.local/actividades/editar/123</div>
+                <div class="wf-browser__actions">
+                    <span class="wf-dot"></span>
+                    <span class="wf-dot"></span>
+                    <span class="wf-dot"></span>
+                </div>
+            </div>
+
+            <main class="wf-browser__content">
+                <h1 class="wf-section-title">Editar Actividad: Limpieza de Playa</h1>
+
+                <div class="wf-auth-columns wf-auth-columns--single">
+                    <div class="wf-form-panel" style="max-width: 600px;">
+                        <div class="wf-card">
+                            <form class="wf-form">
+                                <div class="wf-stack">
+                                    <div class="wf-field">
+                                        <label class="wf-label wf-required">Título de la actividad</label>
+                                        <input type="text" class="wf-input" value="Limpieza de Playa" required />
+                                    </div>
+
+                                    <div class="wf-field">
+                                        <label class="wf-label wf-required">Descripción</label>
+                                        <textarea class="wf-input" style="height: 100px; padding-top: 8px;"
+                                            required>Jornada de recolección de residuos en la playa principal.</textarea>
+                                    </div>
+
+                                    <div class="wf-form-grid">
+                                        <div class="wf-field">
+                                            <label class="wf-label wf-required">Fecha</label>
+                                            <input type="date" class="wf-input" value="2025-10-20" required />
+                                        </div>
+                                        <div class="wf-field">
+                                            <label class="wf-label wf-required">Hora</label>
+                                            <input type="time" class="wf-input" value="08:00" required />
+                                        </div>
+                                    </div>
+
+                                    <div class="wf-field">
+                                        <label class="wf-label wf-required">Lugar / Dirección</label>
+                                        <input type="text" class="wf-input" value="Playa El Rodadero" required />
+                                    </div>
+
+                                    <div class="wf-form-grid">
+                                        <div class="wf-field">
+                                            <label class="wf-label wf-required">Cupos Máximos</label>
+                                            <input type="number" class="wf-input" value="20" min="1" required />
+                                            <div class="wf-hint">Inscritos actuales: 5</div>
+                                        </div>
+                                        <div class="wf-field">
+                                            <label class="wf-label wf-required">Categoría</label>
+                                            <select class="wf-select" required>
+                                                <option selected>Ambiental</option>
+                                                <option>Social</option>
+                                                <option>Educativa</option>
+                                                <option>Salud</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="wf-actions">
+                                        <a href="home_coordinador.html" class="wf-button wf-button--secondary"
+                                            style="margin-right: 8px;">Cancelar</a>
+                                        <button type="submit" class="wf-button">Guardar Cambios</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

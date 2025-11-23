@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recuperación de contraseña · Wireframe</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wf-app">
+      <div class="wf-browser">
+        <div class="wf-browser__bar">
+          <div class="wf-browser__controls">
+            <a class="wf-icon-btn" href="login.html" aria-label="Atrás">⟵</a>
+            <button class="wf-icon-btn" aria-label="Adelante">⟶</button>
+            <button class="wf-icon-btn" aria-label="Recargar">⟳</button>
+          </div>
+          <div class="wf-browser__url">https://wireframe.local/recuperar</div>
+          <div class="wf-browser__actions">
+            <span class="wf-dot"></span>
+            <span class="wf-dot"></span>
+            <span class="wf-dot"></span>
+          </div>
+        </div>
+
+        <main class="wf-browser__content">
+          <h1 class="wf-section-title">Recuperar contraseña</h1>
+          <form class="wf-form" action="#" method="post" novalidate>
+            <div class="wf-form-grid">
+              <div class="wf-field wf-field--full">
+                <label class="wf-label wf-required" for="recovery-email">Correo electrónico</label>
+                <input id="recovery-email" class="wf-input" type="email" required placeholder="usuario@dominio.com" />
+                <div class="wf-error">Formato de correo inválido.</div>
+              </div>
+            </div>
+            <div class="wf-actions">
+              <button class="wf-button" type="submit">Enviar enlace</button>
+            </div>
+          </form>
+
+          <footer class="wf-footer-nav">
+            <a class="wf-link" href="login.html">Volver al inicio de sesión</a>
+          </footer>
+        </main>
+      </div>
+    </div>
+  </body>
+  </html>
+

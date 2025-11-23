@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Usuario Creado · Administración</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wf-app">
+      <div class="wf-browser">
+        <div class="wf-browser__bar">
+          <div class="wf-browser__controls">
+            <a class="wf-icon-btn" href="crear_usuario.html" aria-label="Atrás">⟵</a>
+            <button class="wf-icon-btn" aria-label="Adelante">⟶</button>
+            <button class="wf-icon-btn" aria-label="Recargar">⟳</button>
+          </div>
+          <div class="wf-browser__url">https://wireframe.local/admin/usuarios/creado</div>
+          <div class="wf-browser__actions">
+            <span class="wf-dot"></span>
+            <span class="wf-dot"></span>
+            <span class="wf-dot"></span>
+          </div>
+        </div>
+
+        <main class="wf-browser__content">
+          <h1 class="wf-section-title">Usuario creado correctamente</h1>
+
+          <div class="wf-banner" role="status" aria-live="polite">
+            Se enviaron credenciales temporales al correo: usuario@dominio.com
+          </div>
+
+          <section class="wf-grid wf-grid--2">
+            <div class="wf-card">
+              <div class="wf-card__title">Resumen del usuario</div>
+              <div class="wf-stack">
+                <div class="wf-paragraph"><strong>Nombre:</strong> Nombre Apellido</div>
+                <div class="wf-paragraph"><strong>Documento:</strong> 1234567890</div>
+                <div class="wf-paragraph"><strong>Correo:</strong> usuario@dominio.com</div>
+                <div class="wf-paragraph"><strong>Teléfono:</strong> 3001234567</div>
+                <div class="wf-paragraph"><strong>Rol:</strong> Coordinador</div>
+                <div class="wf-paragraph"><strong>Ciudad:</strong> Bogotá</div>
+              </div>
+            </div>
+            <div class="wf-card">
+              <div class="wf-card__title">Próximos pasos</div>
+              <div class="wf-paragraph">El usuario debe cambiar la contraseña temporal al iniciar sesión.</div>
+              <div class="wf-paragraph">Puedes editar estos datos desde el módulo de administración.</div>
+            </div>
+          </section>
+
+          <div class="wf-toolbar">
+            <a class="wf-button wf-button--secondary" href="home_admin.html">Ir al panel</a>
+            <a class="wf-button" href="crear_usuario.html">Crear otro usuario</a>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+  </html>
+

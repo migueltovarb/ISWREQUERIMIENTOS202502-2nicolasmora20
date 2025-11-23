@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Control de Asistencia · Coordinador</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="wf-app">
+        <div class="wf-browser">
+            <div class="wf-browser__bar">
+                <div class="wf-browser__controls">
+                    <a class="wf-icon-btn" href="home_coordinador.html" aria-label="Atrás">←</a>
+                    <button class="wf-icon-btn" aria-label="Adelante">→</button>
+                    <button class="wf-icon-btn" aria-label="Recargar">↻</button>
+                </div>
+                <div class="wf-browser__url">https://wireframe.local/actividades/asistencia/123</div>
+                <div class="wf-browser__actions">
+                    <span class="wf-dot"></span>
+                    <span class="wf-dot"></span>
+                    <span class="wf-dot"></span>
+                </div>
+            </div>
+
+            <main class="wf-browser__content">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 24px;">
+                    <div>
+                        <h1 class="wf-section-title" style="margin-bottom: 4px;">Control de Asistencia</h1>
+                        <div class="wf-paragraph">Actividad: <strong>Limpieza de Playa</strong> (20/10/2025)</div>
+                    </div>
+                    <div class="wf-chip">Estado: Finalizada</div>
+                </div>
+
+                <div class="wf-card">
+                    <div class="wf-toolbar" style="margin-top: 0; margin-bottom: 16px; justify-content: space-between;">
+                        <div class="wf-paragraph">Voluntarios inscritos: <strong>4</strong></div>
+                        <button class="wf-button wf-button--outline">Exportar Lista</button>
+                    </div>
+
+                    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+                        <thead>
+                            <tr style="border-bottom: 2px solid var(--gray-200);">
+                                <th style="padding: 12px;">Voluntario</th>
+                                <th style="padding: 12px;">Correo</th>
+                                <th style="padding: 12px; text-align: center;">Asistencia</th>
+                                <th style="padding: 12px;">Notas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid var(--gray-100);">
+                                <td style="padding: 12px;">Juan Pérez</td>
+                                <td style="padding: 12px; color: var(--gray-600);">juan@email.com</td>
+                                <td style="padding: 12px; text-align: center;">
+                                    <input type="checkbox" checked style="width: 18px; height: 18px;" />
+                                </td>
+                                <td style="padding: 12px;"><input type="text" class="wf-input" style="height: 32px;"
+                                        placeholder="Opcional..." /></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--gray-100);">
+                                <td style="padding: 12px;">Maria Gomez</td>
+                                <td style="padding: 12px; color: var(--gray-600);">maria@email.com</td>
+                                <td style="padding: 12px; text-align: center;">
+                                    <input type="checkbox" checked style="width: 18px; height: 18px;" />
+                                </td>
+                                <td style="padding: 12px;"><input type="text" class="wf-input" style="height: 32px;" />
+                                </td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--gray-100);">
+                                <td style="padding: 12px;">Carlos Ruiz</td>
+                                <td style="padding: 12px; color: var(--gray-600);">carlos@email.com</td>
+                                <td style="padding: 12px; text-align: center;">
+                                    <input type="checkbox" style="width: 18px; height: 18px;" />
+                                </td>
+                                <td style="padding: 12px;"><input type="text" class="wf-input" style="height: 32px;"
+                                        value="No se presentó" /></td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px;">Ana Torres</td>
+                                <td style="padding: 12px; color: var(--gray-600);">ana@email.com</td>
+                                <td style="padding: 12px; text-align: center;">
+                                    <input type="checkbox" checked style="width: 18px; height: 18px;" />
+                                </td>
+                                <td style="padding: 12px;"><input type="text" class="wf-input" style="height: 32px;" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="wf-actions"
+                        style="border-top: 1px solid var(--gray-200); padding-top: 16px; margin-top: 16px;">
+                        <a href="home_coordinador.html" class="wf-button wf-button--secondary"
+                            style="margin-right: 8px;">Cancelar</a>
+                        <button class="wf-button">Guardar y Generar Certificados</button>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

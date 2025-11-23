@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inicio de sesión · Wireframe</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wf-app">
+      <div class="wf-browser">
+        <div class="wf-browser__bar">
+          <div class="wf-browser__controls">
+            <a class="wf-icon-btn" href="registro.html" aria-label="Atrás">⟵</a>
+            <button class="wf-icon-btn" aria-label="Adelante">⟶</button>
+            <button class="wf-icon-btn" aria-label="Recargar">⟳</button>
+          </div>
+          <div class="wf-browser__url">https://wireframe.local/login</div>
+          <div class="wf-browser__actions">
+            <span class="wf-dot"></span>
+            <span class="wf-dot"></span>
+            <span class="wf-dot"></span>
+          </div>
+        </div>
+
+        <main class="wf-browser__content">
+
+
+          <div class="wf-banner wf-banner--compact" role="status" aria-live="polite">Registro exitoso. Ingresa con tu correo y contraseña.</div>
+          <div class="wf-banner wf-banner--error wf-banner--compact" role="alert" aria-live="assertive">Credenciales incorrectas. Verifica tu correo y contraseña.</div>
+
+          <!-- Panel único: Sign in, centrado -->
+          <div class="wf-auth-columns wf-auth-columns--single">
+            <section class="wf-card wf-form-panel">
+              <div class="wf-card__title">Inicia sesión</div>
+              <p class="wf-paragraph">Ingresa tu correo y contraseña.</p>
+              <form class="wf-form" action="#" method="post" novalidate>
+                <div class="wf-form-grid">
+                  <div class="wf-field wf-field--full">
+                    <label class="wf-label wf-required" for="login-email">Correo electrónico</label>
+                    <input id="login-email" class="wf-input" type="email" required autocomplete="email" placeholder="usuario@dominio.com" aria-describedby="login-email-error" />
+                    <div id="login-email-error" class="wf-error">Formato de correo inválido.</div>
+                  </div>
+                  <div class="wf-field wf-field--full">
+                    <label class="wf-label wf-required" for="login-pass">Contraseña</label>
+                    <input id="login-pass" class="wf-input" type="password" required autocomplete="current-password" placeholder="••••••" aria-describedby="login-pass-error" />
+                    <div id="login-pass-error" class="wf-error">Este campo es obligatorio.</div>
+                  </div>
+                </div>
+                <div class="wf-option" style="margin-top:8px;">
+                  <input type="checkbox" id="remember" />
+                  <label for="remember">Recordarme</label>
+                </div>
+                <div class="wf-actions">
+                  <button class="wf-button" type="submit">Iniciar sesión</button>
+                </div>
+                <div class="wf-footer-nav" style="margin-top:12px; border-top:none; padding-top:0;">
+                  <a class="wf-link" href="recuperar.html">¿Olvidaste tu contraseña?</a>
+                </div>
+                <div class="wf-hint">La sesión permanece activa por 30 minutos de inactividad.</div>
+              </form>
+            </section>
+          </div>
+
+        </main>
+      </div>
+    </div>
+  </body>
+  </html>

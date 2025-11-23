@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wireframes Template</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="wf-app">
+      <div class="wf-browser">
+        <div class="wf-browser__bar">
+          <div class="wf-browser__controls">
+            <button class="wf-icon-btn" aria-label="Atrás">⟵</button>
+            <button class="wf-icon-btn" aria-label="Adelante">⟶</button>
+            <button class="wf-icon-btn" aria-label="Recargar">⟳</button>
+          </div>
+          <div class="wf-browser__url">https://wireframe.local/plantilla</div>
+          <div class="wf-browser__actions">
+            <span class="wf-dot"></span>
+            <span class="wf-dot"></span>
+            <span class="wf-dot"></span>
+          </div>
+        </div>
+
+        <main class="wf-browser__content">
+          <header class="wf-header">
+            <div class="wf-textbox-static">Website Name</div>
+          </header>
+
+          <section class="wf-hero">
+            <div class="wf-placeholder wf-placeholder--hero"></div>
+          </section>
+
+          <div class="wf-center">
+            <button class="wf-button">Call to action</button>
+          </div>
+
+          <section class="wf-grid wf-grid--2">
+            <div class="wf-card">
+              <div class="wf-card__title">Customer quotes</div>
+              <div class="wf-paragraph">Texto de ejemplo para citas de clientes.</div>
+            </div>
+
+            <div class="wf-card">
+              <div class="wf-media">
+                <div class="wf-media__thumb">
+                  <span class="wf-media__play"></span>
+                </div>
+                <div class="wf-media__controls">
+                  <div class="wf-slider"></div>
+                  <div class="wf-volume"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <footer class="wf-footer-nav">
+            <a class="wf-link" href="#">ABOUT US</a>
+            <a class="wf-link" href="#">CONTACT INFO</a>
+            <a class="wf-link" href="#">AUTHORIZED DEALERS</a>
+          </footer>
+
+          <section class="wf-library">
+            <h2 class="wf-library__title">Componentes base</h2>
+            <div class="wf-grid wf-grid--3">
+              <div class="wf-card">
+                <div class="wf-card__title">Botones</div>
+                <div class="wf-stack">
+                  <button class="wf-button">Primario</button>
+                  <button class="wf-button wf-button--secondary">Secundario</button>
+                  <button class="wf-button" disabled>Deshabilitado</button>
+                </div>
+              </div>
+
+              <div class="wf-card">
+                <div class="wf-card__title">Inputs</div>
+                <div class="wf-stack">
+                  <label class="wf-label" for="i1">Campo de texto</label>
+                  <input id="i1" class="wf-input" type="text" placeholder="Placeholder" />
+                  <label class="wf-label" for="i2">Con validación</label>
+                  <input id="i2" class="wf-input is-invalid" type="text" placeholder="Error" />
+                  <div class="wf-error">Mensaje de validación</div>
+                </div>
+              </div>
+
+              <div class="wf-card">
+                <div class="wf-card__title">Cards y lista</div>
+                <ul class="wf-list">
+                  <li class="wf-list__item">Item 1</li>
+                  <li class="wf-list__item">Item 2</li>
+                  <li class="wf-list__item">Item 3</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+  </html>
+
